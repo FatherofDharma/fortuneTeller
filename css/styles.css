@@ -1,0 +1,19 @@
+/*.container puts the wepage in a container to enhance the look of the content.*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1120px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 110px;
+}
+/*contentbox puts content into a box to seperate content into different boxes.*/
+.contentbox {
+  background-color: #515151;
+  border-radius: 15px;
+  box-shadow: 5px 5px #272525;
+  color: black;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
