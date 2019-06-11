@@ -1,24 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script scr="js/scripts.js"></script>
-    <title>Fortune Teller</title>
-  </head>
-  <body class="container">
-    <div class="contentbox">
-      <form class="formOne">
+<html>
+<head>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Fortune Teller</title>
+</head>
+<body class="container">
+  <div class="contentbox">
+    <form id="pastForm">
       <h1>Make some choices, and I'll tell you your fate!</h1>
       <p>In your past life, have you ever done any of the following?</p>
-      <input type="checkbox" name="pastChoices" value="thrown">Thrown rocks at elders.<br>
-      <input type="checkbox" name="pastChoices" value="chased">Chased siblings with sticks.<br>
-      <input type="checkbox" name="pastChoices" value="spit">Spit on other people.<br>
-      <input type="checkbox" name="pastChoices" value="chewed">Chewed on sticks for fun.<br>
-      <input type="checkbox" name="pastChoices" value="made">Made a child cry on purpose.<br>
-      <input type="checkbox" name="pastChoices" value="cooked">Cooked a meal that burned down a house.<br>
+      <input type="checkbox" name="pastChoices" value="3">Thrown rocks at elders.<br>
+      <input type="checkbox" name="pastChoices" value="2">Chased siblings with sticks.<br>
+      <input type="checkbox" name="pastChoices" value="3">Spit on other people.<br>
+      <input type="checkbox" name="pastChoices" value="1">Chewed on sticks for fun.<br>
+      <input type="checkbox" name="pastChoices" value="2">Made a child cry on purpose.<br>
+      <input type="checkbox" name="pastChoices" value="1">Cooked a meal that burned down a house.<br>
+      <p>In your current life, have you ever done any of the following?</p>
+      <input type="checkbox" name="presentChoices" value="3">Broken up with someone over social media.<br>
+      <input type="checkbox" name="presentChoices" value="3">Pushed someone off of a bridge.<br>
+      <input type="checkbox" name="presentChoices" value="2">Binge watched the Twilight series.<br>
+      <input type="checkbox" name="presentChoices" value="1">Intentionally brought on the wrath of a cat.<br>
+      <input type="checkbox" name="presentChoices" value="2">stomped on the floor of your apartment, just to aggrivate your neighbors.<br>
+      <input type="checkbox" name="presentChoices" value="1">Forced someone to smell flowers by shoving them in their face.<br>
+      <p>In your next life, do you want to do any of the following?</p>
+      <input type="checkbox" name="futureChoices" value="1">Get away with hiding all of your significant other's underwear.<br>
+      <input type="checkbox" name="futureChoices" value="1">Die while sleeping.<br>
+      <input type="checkbox" name="futureChoices" value="2">Press a red button without knowing what it does.<br>
+      <input type="checkbox" name="futureChoices" value="3">Beat up a clown.<br>
+      <input type="checkbox" name="futureChoices" value="2">Try coke.<br>
+      <input type="checkbox" name="futureChoices" value="3">Drive an Uber on the freeway while blindfolded.<br>
 
+      <button type="submit" name="button">Seal my fate</button>
+    </form>
+  </div>
+  <div class="contentbox hidden" id="fate">
+    <div id="present">
+      <p>From the exploits of your lives, your fate is sealed:</p>
+      <!-- presentChoices -->
+      <p class="good hidden">Your life will be uneventful...PAINFULLY uneventful. Imagine yourself working in a cubicle for the IRS for the rest of your life, pushing paperwork all day.....without thanks. Be thankful it isn't for eternity.</p>
+      <p class="decent hidden">Your life will have its ups and downs, but it will be mostly balanced. For example, you will win the lottery, but then be audited by the IRS and lose everything.</p>
+      <p class="wicked hidden">Your life will be full of satisfaction...For the next 48 hours, until you are removed to a blacksite and never heard from again. Good Riddance!</p>
     </div>
+    <div id="past">
+      <!-- pastChoices -->
 
-  </body>
+      <p class="good hidden">You haven't done enough to warrant punishment yet, but by the end of this life, you will have. Your end will come at the claws of rabid squirrels.</p>
+      <p class="decent hidden">Though you were not rotten to the core, your past of walking fences will pay you the same in return. Your end will come from being impailed by some type of fence.</p>
+      <p class="wicked hidden">Congratulations on earning the respect of all depraved souls. Your end will come by your worst fear made real. The clowns are coming for you....</p>
+    </div>
+    <div id="future">
+      <!-- futureChoices -->
+      <p class="good hidden">Congratulations, you aren't the worst being on the planet. As a result, you may be allowed to return as a human....maybe, but probably not. You'll be a dog.</p>
+      <p class="decent hidden">You haven't tipped the worlds' scales very much, so you will only return as a couch. This way you can learn humility while serving as a thing to be sat upon. Be grateful you aren't a *#$*@</p>
+      <p class="wicked hidden">You are a dark soul that does not deserve mercy. Your next life will be one of punishment. You will be a high school teacher in Oklahoma.</p>
+    </div>
+  </div>
+</body>
 </html>
